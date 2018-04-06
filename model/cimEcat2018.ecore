@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="cimEcat2018" nsURI="http://www.example.org/cimEcat2018" nsPrefix="cimEcat2018">
+  <eClassifiers xsi:type="ecore:EClass" name="Amparos"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CargoDelCertificador">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ID"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codigo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="descripcion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Cie"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Ciuu"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClasificacionEvento"/>
+  <eClassifiers xsi:type="ecore:EClass" name="CodigoAseguradoras"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EstadoRegistroIps"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Furips" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zona" eType="#//Zona"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="departamentos" eType="#//Departamentos"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="municipios" eType="#//Municipios"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="amparos" eType="#//Amparos"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cie" eType="#//Cie"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="codigoaseguradoras" eType="#//CodigoAseguradoras"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="codigodehabilitacionipsremitente"
+        eType="#//CodigoDeHabilitacionIPSRemitente"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="condiciondelaccidentado"
+        eType="#//condicionDelAccidentado"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="estadoaseguramientovehiculo"
+        eType="#//EstadoAseguramientoVehiculo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="glosasfurips" eType="#//GlosasFurips"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="smlv" eType="#//SMLV"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sino" eType="#//SiNo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sexo" eType="#//Sexo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Furcen" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="glosasfurcen" eType="#//GlosasFurcen"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="municipios" eType="#//Municipios"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="departamentos" eType="#//Departamentos"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="naturalezaeventofurcen"
+        eType="#//NaturalezaEventoFurcen"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tipodocumentocertificador"
+        eType="#//TipoDocumentoCertificador"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tipodocumentovictima" eType="#//TipoDocumentoVictima"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="cargodelcertificador" eType="#//CargoDelCertificador"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zona" eType="#//Zona"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Furpen" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="departamentos" eType="#//Departamentos"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="municipios" eType="#//Municipios"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zona" eType="#//Zona"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Furpro" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="departamentos" eType="#//Departamentos"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="municipios" eType="#//Municipios"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zona" eType="#//Zona"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Furtran" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="departamentos" eType="#//Departamentos"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="municipios" eType="#//Municipios"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="zona" eType="#//Zona"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GlosasForEcat"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GlosasFurcen">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ID"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codigo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="descripcion" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GlosasFurips"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GlosasFurpen"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GlosasFurpro"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GlosasFurtran"/>
+  <eClassifiers xsi:type="ecore:EClass" name="HabilitacionIpsRemitente"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Municipios">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ID"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codigo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="descripcion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="departamentos" upperBound="-1"
+        eType="#//Departamentos" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NaturalezaEvento">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="furips" eType="#//Furips"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NaturalezaEventoFurcen">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ID"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codigo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="descripcion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NaturalezaEventoFurpro"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Parentesco"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RG"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Sexo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SiNo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SMLV"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TablaCums"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TablaSismed"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TarifarioSoat"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDeExtemporaneidad"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDeServicioMedico"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDeServicio"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDeServicioFURPEN"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDeServicioFURTRAN"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NewEClass37"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDeServicioFURIPS"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDeTransporte"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDocumentoCertificador">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ID"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codigo" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="descripcion" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//String"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDocumentoConductor"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDocumentoMedico"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDocumentoPropietario"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDocumentoReclamante"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoDocumentoVictima">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ID"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codigo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="descripcion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoReferencia"/>
+  <eClassifiers xsi:type="ecore:EClass" name="TipoRegimen"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ValidacionesGenerales"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Zona">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ID"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codigo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="descripcion" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Departamentos">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//ID"
+        iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codigo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="descripcion" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CodigoDeHabilitacionIPSRemitente"/>
+  <eClassifiers xsi:type="ecore:EClass" name="condicionDelAccidentado"/>
+  <eClassifiers xsi:type="ecore:EClass" name="EstadoAseguramientoVehiculo"/>
+</ecore:EPackage>

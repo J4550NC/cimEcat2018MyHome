@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/cimEcat2018/src-gen" creationIcons="false" editDirectory="/cimEcat2018.edit/src-gen"
+    editorDirectory="/cimEcat2018.editor/src-gen" modelPluginID="cimEcat2018" modelName="CimEcat2018"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>cimEcat2018.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="CimEcat2018" disposableProviderFactory="true" ecorePackage="cimEcat2018.ecore#/">
+    <genClasses ecoreClass="cimEcat2018.ecore#//Amparos"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//CargoDelCertificador">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//CargoDelCertificador/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//CargoDelCertificador/codigo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//CargoDelCertificador/descripcion"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Cie"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Ciuu"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//ClasificacionEvento"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//CodigoAseguradoras"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//EstadoRegistroIps"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Furips">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/zona"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/departamentos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/municipios"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/amparos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/cie"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/codigoaseguradoras"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/codigodehabilitacionipsremitente"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/condiciondelaccidentado"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/estadoaseguramientovehiculo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/glosasfurips"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/smlv"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/sino"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furips/sexo"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Furcen">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furcen/glosasfurcen"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furcen/municipios"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furcen/departamentos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furcen/naturalezaeventofurcen"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furcen/tipodocumentocertificador"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furcen/tipodocumentovictima"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furcen/cargodelcertificador"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furcen/zona"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Furpen">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furpen/departamentos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furpen/municipios"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furpen/zona"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Furpro">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furpro/departamentos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furpro/municipios"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furpro/zona"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Furtran">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furtran/departamentos"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furtran/municipios"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Furtran/zona"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//GlosasForEcat"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//GlosasFurcen">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//GlosasFurcen/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//GlosasFurcen/codigo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//GlosasFurcen/descripcion"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//GlosasFurips"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//GlosasFurpen"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//GlosasFurpro"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//GlosasFurtran"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//HabilitacionIpsRemitente"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Municipios">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//Municipios/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//Municipios/codigo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//Municipios/descripcion"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//Municipios/departamentos"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//NaturalezaEvento">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference cimEcat2018.ecore#//NaturalezaEvento/furips"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//NaturalezaEventoFurcen">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//NaturalezaEventoFurcen/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//NaturalezaEventoFurcen/codigo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//NaturalezaEventoFurcen/descripcion"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//NaturalezaEventoFurpro"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Parentesco"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//RG"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Sexo"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//SiNo"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//SMLV"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TablaCums"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TablaSismed"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TarifarioSoat"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDeExtemporaneidad"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDeServicioMedico"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDeServicio"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDeServicioFURPEN"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDeServicioFURTRAN"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//NewEClass37"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDeServicioFURIPS"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDeTransporte"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDocumentoCertificador">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//TipoDocumentoCertificador/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//TipoDocumentoCertificador/codigo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//TipoDocumentoCertificador/descripcion"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDocumentoConductor"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDocumentoMedico"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDocumentoPropietario"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDocumentoReclamante"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoDocumentoVictima">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//TipoDocumentoVictima/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//TipoDocumentoVictima/codigo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//TipoDocumentoVictima/descripcion"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoReferencia"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//TipoRegimen"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//ValidacionesGenerales"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Zona">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//Zona/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//Zona/codigo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//Zona/descripcion"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//Departamentos">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//Departamentos/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//Departamentos/codigo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute cimEcat2018.ecore#//Departamentos/descripcion"/>
+    </genClasses>
+    <genClasses ecoreClass="cimEcat2018.ecore#//CodigoDeHabilitacionIPSRemitente"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//condicionDelAccidentado"/>
+    <genClasses ecoreClass="cimEcat2018.ecore#//EstadoAseguramientoVehiculo"/>
+  </genPackages>
+</genmodel:GenModel>
